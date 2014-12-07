@@ -48,6 +48,7 @@
       </div>
       
       <div style ="clear:both">
+      <hr/>
       <H2>Les mathématiques avec TexMaker</H2>
       
       <p><a href="http://www.xm1math.net/doculatex/intromath.html">Sur le site de TexMaker</a>, vous trouverez un tutoriel avec la liste des menus qui vous aident à écrire des formules mathématiques. </p>
