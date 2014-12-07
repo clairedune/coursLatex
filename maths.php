@@ -37,6 +37,20 @@
                 <img src="image/7.png" width="500"/>
             </figure>
         </div>
+        
+        <p>
+        
+        Il existe une autre manière d'écrire des formules hors ligne : en utilisant \[ et \] au lieu de $$ et $$.
+        
+        </p>
+        
+      </div>
+      
+      <div style ="clear:both">
+      <H2>Les mathématiques avec TexMaker</H2>
+      
+      <p><a href="http://www.xm1math.net/doculatex/intromath.html">Sur le site de TexMaker</a>, vous trouverez un tutoriel avec la liste des menus qui vous aident à écrire des formules mathématiques. </p>
+      
       </div>
       
       <div style="clear:both;">
