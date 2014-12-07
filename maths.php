@@ -43,19 +43,7 @@
         Il existe une autre manière d'écrire des formules hors ligne : en utilisant \[ et \] au lieu de $$ et $$.
         
         </p>
-        <div class="code" style="float:left;width:40%;" >
-           
-            Exemple d'une formule mathématique dans un environnement équation~: <br/>
-                \begin{equation}<br/>
-                    x=3y+5z^2<br/>
-                \label{eq:ex1}<br/>
-                \end{equation}<br/>
-                <br/>
-            Même chose mais cette fois sans numéroter l'équation~:  <br/>
-            \begin{equation*}<br/>
-                x=3y+5z^2<br/>
-            \end{equation*}<br/>
-        </div>
+       
 
         
       </div>
@@ -67,6 +55,20 @@
       <p>
         Pour que les équations soient numérotées et qu'on puisse y faire référence avec des labels, il faut utiliser l'environnement equation.
       </p> 
+      
+       <div class="code" style="float:left;width:40%;" >
+           
+            Exemple d'une formule mathématique dans un environnement équation~\ref{eq:ex1}: <br/>
+                \begin{equation}<br/>
+                    x=3y+5z^2<br/>
+                \label{eq:ex1}<br/>
+                \end{equation}<br/>
+                <br/>
+            Même chose mais cette fois sans numéroter l'équation~:  <br/>
+            \begin{equation*}<br/>
+                x=3y+5z^2<br/>
+            \end{equation*}<br/>
+        </div>
       
       </div>
       
