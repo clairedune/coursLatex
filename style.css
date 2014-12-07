@@ -1,0 +1,57 @@
+           p{
+               text-align:justify;   
+             }
+             
+            .container
+            {
+                width       : 800px;
+                margin-left : auto;
+                margin-right: auto;
+                }
+             
+            .code
+            {
+                font-family     : "Courier New";
+                //font-weight   : bold;  
+                background-color: #777799; /* Le fond de la page sera noir */
+                color           : #DDDDDD; /* Le texte de la page sera blanc */  
+                font-size       : 0.8em; 
+                border-radius   : 4px;
+                box-shadow      : 1px 1px 0px #DDDDDD;
+                margin          : 10px;
+                width           : 40%;
+                //height:200;
+                margin          : 10px;
+                padding         : 10px;
+               
+            }
+            
+            
+            .exercice
+            {
+                font-family : Arial, Verdana;
+                font-style : italic;  
+                background-color: #DD9999; 
+                font-size: 0.8em; 
+                border-radius: 4px;
+                box-shadow: 2px 2px 0px #DDDDDD;
+                margin          : 10px;
+                width           : 80%;
+                //height:200;
+                margin          : 10px;
+                padding         : 10px;
+            }
+    
+    
+            .texte
+            {
+                //font-family : Arial, Verdana;
+                //font-style : italic;  
+                background-color: #FFFFFF;//#EEEEEE; 
+                font-size: 1em; 
+                border-radius: 4px;
+                margin:10px;
+                padding:10px;
+
+                //box-shadow: 2px 2px 0px #DDDDDD;
+            }
