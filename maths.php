@@ -37,7 +37,8 @@
                 <img src="image/7.png" width="500"/>
             </figure>
         </div>
-        
+       </div>
+      <div style ="clear:both">  
         <p>
         
         Il existe une autre manière d'écrire des formules hors ligne : en utilisant \[ et \] au lieu de $$ et $$.
