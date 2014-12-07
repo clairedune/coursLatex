@@ -77,8 +77,19 @@
       <hr/>
       <H2>Quelques exemples </H2>
       
-     
+     <H3>Ecrire des limites</H3>
       
+       <div class="code" style="float:left;width:90%;" >
+      Cet exemple montre deux manières d'écrire des limites~:<br/>
+
+\begin{equation}<br/>
+\lim\limits_{x \rightarrow +\infty} f(x)<br/>
+\label{eq:ex2}<br/>
+ \end{equation}<br/>
+\begin{equation}<br/>
+\lim\limits_{\substack{x \rightarrow -2 \\ x>-2}} f(x)<br/>
+\end{equation}<br/>
+      </div>
       </div>
       
       <div style ="clear:both">
