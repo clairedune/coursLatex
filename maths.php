@@ -56,7 +56,7 @@
         Pour que les équations soient numérotées et qu'on puisse y faire référence avec des labels, il faut utiliser l'environnement equation.
       </p> 
       
-       <div class="code" style="float:left;width:40%;" >
+       <div class="code" style="float:left;width:90%;" >
            
             Exemple d'une formule mathématique dans un environnement équation~\ref{eq:ex1}: <br/>
                 \begin{equation}<br/>
@@ -90,6 +90,32 @@
 \lim\limits_{\substack{x \rightarrow -2 \\ x>-2}} f(x)<br/>
 \end{equation}<br/>
       </div>
+      
+      <H3> Ecrire un système d'équation </H3>
+      
+      <div class="code" style="float:left;width:90%;" >
+      \begin{equation}<br/>
+\left\{<br/>
+	\begin{array}{ccc}<br/>
+		x&=&3y\\<br/>
+		y&=&2z\\<br/>
+		x&=&32y+12z<br/>
+\end{array}<br/>
+\right .<br/>
+\end{equation}<br/>
+      </div>
+      
+      <H3> Ecrire une démonstration mathématique sans numérotation </H3>
+      
+      <div class="code" style="float:left;width:90%;" >
+      \begin{align}<br/>
+  R(-1) &= \sum_{i=1}^m A(i)R(i-1) \\<br/>
+  R(-2) &= \sum_{i=1}^m A(i)R(i-2) \\<br/>
+        &\vdots                    \\<br/>
+  R(-k) &= \sum_{i=1}^m A(i)R(i-k)<br/>
+\end{align}<br/>
+       </div>
+      
       </div>
       
       <div style ="clear:both">
@@ -106,8 +132,7 @@
       <H2>Le package AMS</H2>
       
       <p class="texte">
-      Vous trouverez un guide en anglais pour utiliser le package amsmath à l'url suivante : 
-      <a href="http://mirrors.linsrv.net/tex-archive/macros/latex/required/amslatex/math/amsldoc.pdf">http://mirrors.linsrv.net/tex-archive/macros/latex/required/amslatex/math/amsldoc.pdf</a>.
+      <a href="docs/amsldoc.pdf">Vous trouverez ici un guide en anglais</a> pour utiliser le package amsmath.
       </p>
       
       
