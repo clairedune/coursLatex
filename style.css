@@ -7,6 +7,7 @@
                 width       : 1000px;
                 margin-left : auto;
                 margin-right: auto;
+		font-family : "Helvetica";
                 }
              
             .code
@@ -29,7 +30,7 @@
             
             .exercice
             {
-                font-family : Arial, Verdana;
+                font-family : Helvetica, Arial, Verdana;
                 font-style : italic;  
                 background-color: #DD9999; 
                 font-size: 0.8em; 
@@ -45,9 +46,9 @@
     
             .texte
             {
-                //font-family : Arial, Verdana;
-                //font-style : italic;  
-                background-color: #FFFFFF;//#EEEEEE; 
+                font-family : Arial, Verdana;
+                font-style : italic;  
+                background-color: #FFFFFF; 
                 font-size: 1em; 
                 border-radius: 4px;
                 margin:10px;

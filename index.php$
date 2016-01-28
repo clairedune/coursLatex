@@ -11,13 +11,9 @@
         <H1> Introduction à LaTeX par la pratique </H1>
         
         <H2> Introduction </H2>
-        <p>
-           A l'origine le langage TeX a été crée pour faciliter la réalisation de documents scientifiques, en particulier l'écriture des formules mathématques   
-        </p>
-        <p>
+        <p>A l'origine le langage TeX a été crée pour faciliter la réalisation de documents scientifiques, en particulier l'écriture des formules mathématiques.
         LaTeX est une surcouche de TeX permettant de créer facilement des documents en suivant une trame standard. L'idée étant de séparer entièrement la partie
-        rédactionnelle de la mise en forme
-.</p>
+        rédactionnelle de la mise en forme.</p>
         
 
         <figure>
