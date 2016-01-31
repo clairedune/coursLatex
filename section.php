@@ -177,6 +177,70 @@
         
         <div style="clear:both;">
          <HR />
+         
+         <H2>Les Marges</H2>
+         
+         <p>Dans un document LaTeX, il y a des marges par défaut dans lesquelles vous pouvez écrire. Ces marges se situent à droite du texte dans les documents formatés en recto seulement et des deux côtés lorsque le document est formaté en recto-verso. </p>
+         <p>Si le côté de la marge défini par défaut ne nous convient pas, on peut l'inverser en utilisant la commande </p>
+         <p class="code">\reversemarginpar </p> 
+         
+         
+         <div style = "clear:both;">
+         
+         La commande qui permet d'imprimer une note de marge est 
+         
+         </div>
+         
+         <p class="code">\marginpar[Gauche]{Droite} </p>
+         
+          <div style = "clear:both;">
+         
+         <p>ou <i>Droite</i> est le texte de la note de marge et <i>Gauche </i> est un paramatre optionel destiné au cas où l'on ne voudrait pas mettre de texte selon le côté ou se trouve la marge. Dans ce dernier cas, si la marge est à gauche alors c'est le texte contenu dans les crochets  <i>Gauche </i> qui sera affiché et si la marge est à droite, alors c'est le texte <i>Droite</i> qui sera affiché.</p>
+         
+         <p>
+         Voici un exemple de code qui permet d'afficher une note de marge
+         </p>
+       
+         </div>
+         
+         <div class="code">
+         Une note \marginpar{\scriptsize ceci est une note}
+         de marge.
+         
+         </div>
+
+
+<div class="exercice">
+         <H3>Exercice</H3>
+           Utiliser l'exemple de code ci dessus pour créer une note de marge.
+         
+         </div>
+
+         <p>
+         Attention la numérotation des notes de marge n'est pas automatique.
+         </p>
+         
+         </div>
+         
+         
+                    <div style="clear:both;">
+
+         <HR/>
+         <H2>Notes de pied de page</H2>
+         
+         <p>
+         On peut très facilement générer des notes de pied de page en utilisant la commande \footnote{ma note}. La numérotation des notes de pied de page est automatique. Ne pas insérer d'espace entre le mot et la note de pied de page. On utilise plutôt un espace fine (réalisé par la commande \,). 
+         </p>
+         
+         <div class="code">
+         Mot \footnote{Ceci est la note.} \\
+         <br\>
+         Word\,\footnote{Ceci est la seconde note.}
+         
+         </div>
+         </div>
+           <div style="clear:both;">
+         <HR/>
         <H2>Titre</H2>
           </div>
         <p class="texte">Il est possible d'intégrer un titre automatiquement au document en utilisant la commande suivante juste après la commande \begin{document}</p>
@@ -187,6 +251,10 @@
             <p>       Ajouter un titre au document précédent pour obtenir le <a href="example/title.pdf">document suivant</a>. </p>
          <br>
         </div>
+        
+        
+        
+        
         
         <HR />
         <H2>Table des matières</H2>
@@ -223,6 +291,17 @@
                Je veux faire référence à la section \ref{sec:introduction}.
             
             </div>
+
+
+<div class="texte" style="clear:both;">On peut aussi vouloir donner le numéro de la page ou se trouve la référence : </div>
+
+<div class="code">
+            
+               Je veux faire référence à la page \pageref{sec:introduction}.
+            
+            </div>
+
+<div class="texte" style="clear:both;">Attention pour que les références soient correctes, il faut compiler deux fois de suite le document LaTeX sans changer la mise en page. </div>
 
 <div class="exercice">
             <H3>Exercice</H3>
