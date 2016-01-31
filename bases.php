@@ -1,12 +1,59 @@
-<DOCTYPE !>
-<HTML>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Initiation à LaTeX par la pratique</title>
 
-    <HEAD>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </HEAD>        
-    <BODY>
-           <div class="container">  
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+  
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.php">Introduction à Latex</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="bases.php">Bases</a></li>
+            <li><a href="section.php">Structure</a></li>
+            <li><a href="image.php">Images</a></li>
+            <li><a href="tableau.php">Tableaux</a></li>
+            <li><a href="maths.php">Maths</a></li>
+            <li><a href="biblio.php">Biblio</a></li> 
+            <li><a href="commande.php">Macros</a></li>
+            <li><a href="style.php">Style</a></li>
+            <li><a href="beamer.php">Beamer</a></li>          
+            <li><a href="exercices.php">Exercices</a></li> 
+            
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    
+    </br>
+    </br>
+    <div class="container">  
                    <H1> Eléments de base</H1>
         
         <H2>Un langage de balise</H2>
@@ -32,6 +79,8 @@
         <p>Les environnements sont encadrés par les balises : </p>
         <p class="code"> \begin{La commande} … \end{La commande}</p> 
         
+        
+        <div style="clear:both">
         <H3>Caractères spéciaux</H3>
         <ul>
         <li> %  commentaire</li>
@@ -46,16 +95,18 @@
         
         <p>Pour pouvoir afficher ces caractères dans le document final, il faut utiliser des caractères d'échappement : <p>
         <div>
-        <ul>
-        <li> \%  pour %</li>
-        <li> \~  pour ~</li>
-        <li>\{ et \}  pour { et }</li> 
-        <li> \textbackslash{} pour \</li>
-         <li>\$ pour $</li>
-        <li>\_ pour _</li>
-        <li>\^ pour ^</li>
-        </ul>
+            <ul>
+                <li> \%  pour %</li>
+                <li> \~  pour ~</li>
+                <li>\{ et \}  pour { et }</li> 
+                <li> \textbackslash{} pour \</li>
+                <li>\$ pour $</li>
+                <li>\_ pour _</li>
+                <li>\^ pour ^</li>
+                </ul>
+                </div>
         </div>
+        
         
         
         <HR />
@@ -63,33 +114,34 @@
         
         <p>Un document LaTeX contiendra toujours les lignes suivantes: </p>
         
-        <div class="code"><br/>
-                        \documentclass{article} 	<br/>
-                        \usepackage[utf8x]{inputenc} % pour pouvoir écrire des lettres avec accents<br/>
-                        <br/>
-                        \begin{document}<br/>
-<br/>
-Mon texte
-<br/>
-<br/>
-                        \end{document}<br/><br/>
-
-                        </div>
-                       
-    <p>                    Ce qui figure entre \documentclass{***} et \begin{document} s'appelle le préambule.
-\end{document}	Indique le moment où finit le texte. Rien de ce qui suit cette commande ne sera pris en compte par LaTeX.
+        <div class="code">
+            <br/>
+            \documentclass{article} 	
+            <br/>
+            \usepackage[utf8x]{inputenc} % pour pouvoir écrire des lettres avec accents<br/>
+            <br/>
+            \begin{document}<br/>
+            <br/>
+            Mon texte
+            <br/>
+            <br/>
+            \end{document}
+            <br/>
+            <br/>
+         </div>
+         
+         <div style="clear:both;">              
+            <p>Ce qui figure entre \documentclass{***} et \begin{document} s'appelle le <i>préambule</i>.</p>
+            <p>\end{document} Indique le moment où finit le texte. Attention, rien de ce qui suit cette commande ne sera        pris en compte par LaTeX.
 </p>
         
-        <div class="exercice">
+        <div class="exercice" style="clear:both;">
             <H3>Exercice</H3>
-            <p>        Télécharger le <a href="example/squelette.tex">squelette</a> de base et compilez le.
-            Vous devez obtenir le <a href="example/squelette.pdf">résultat suivant</a>.</p>  
+            <p> Télécharger le <a href="example/squelette.tex">squelette</a> de base et compilez le.</p>
+           <p> Vous devez obtenir le <a href="example/squelette.pdf">résultat suivant</a>.</p>  
         </div>
         <br>
-        <div class="exercice">
-            <H3>Exercice</H3>
-            <p> Utiliser le squelette de base pour afficher tous les caractères spéciaux. <>br\Vous devez obtenir <a href="example/caracspeciaux.pdf">le résultat suivant</a>. </p>  
-        </div>
+        
         
 </p>
         <p>Vous pouvez générer des squelettes de base en utilisant TeXMaker : </p>
@@ -151,23 +203,31 @@ Mon texte
              Un texte \textbf{en gras}, avec quelques mots en \textit{italique} et \underline{un soulignement}.
          </div>
          
+         <div style="clear:both;">
          <p>Donne le <a href="example/style.pdf">résultat suivant</a>.</p>
          
+    
          <p>Ces styles sont capatibles entre eux. On peut les imbriquer : </p>
+         
+         </div>
          <div class="code">
          
 \emph{Dans cet exemple, il y a des mots \textbf{en gras} et des
 titres de livres comme \emph{Alice au pays des merveilles} qui sont
 mis en évidence}.
          </div>
+         
+         <div style="clear:both">
          <p>On obtient alors le  <a href="example/style2.pdf">document suivant</a>.</p>
-
+          
          
          <p><i>Remarque : </i> utilisez plutôt la commande \emph que la commande \textit.  \emph est une commande logique qui permet de mettre en évidence une portion de texte en fonction du contexte alors que la commande \textit met simplement du texte en italique.</p>
          
          
          <p>TexMaker peut vous aider à changer le style d'un bloc de texte en cas de trou de mémoire. </p>
-                  <figure>
+         </div>
+         
+         <figure>
             <img src="image/6.png" width="400"> </tr>
          </figure>  
          
@@ -190,13 +250,18 @@ mis en évidence}.
          
         <div class="code">
             André \textsc{Malraux}, \emph{La condition humaine}
-            {\tiny Parlez moins fort}</div>
+            {\tiny Parlez moins fort}
+        </div>
+        
+        <div style="clear:both;">
         <p>On obtient alors le  <a href="example/style3.pdf">document suivant</a>.</p>
-         
+        </div>
+
+<div style="clear:both;">
          <H3>Texte en couleur</H3>
          <p>Pour mettre une zone de texte en couleur, on peut utiliser le <i>package color</i></p>
          <div style="clear:both;">
-            <div class="code" >
+            <div class="code" style="float:left;width:40%;" >
                 \documentclass[10pt,a4paper]{article}<br />
                 \usepackage[utf8x]{inputenc}<br />
                 \usepackage{color}<br />
@@ -210,11 +275,11 @@ mis en évidence}.
             </div>
           <div style="float:left;width:40%;">
             <figure>
-                <img src="image/8.png" width="100%"/>
+                <img src="image/8.png" width="80%"/>
             </figure>
         </div>
       </div>
-
+</div>
          
      <div style="clear:both;">
          <H3>Justification des paragraphes</H3>
@@ -239,26 +304,9 @@ Pour faire une ligne blanche entre deux paragraphes, il faut laisser une ligne b
             <H3>Exercice</H3>
             <p>        En utilisant l'assistant de TeXMaker, créez le <a href="example/style4.pdf">document suivant</a>. </p>  
         </div>
-         
- <HR />
- <H2> Allez à </H2>
-        <p><a href="index.php">Introduction</a></p>
-        <p><a href="bases.php">Création d'un document et modification du texte.</a></p>
-        <p><a href="section.php">Structure d'un document</a></p>
-        <p><a href="image.php">Insérer des images</a></p>
-        <p><a href="tableau.php">Tableaux</a></p>
-        <p><a href="maths.php">Formules mathématiques</a></p>
-        <p><a href="biblio.php">Créer une bibliographie</a></p> 
-        <p><a href="commande.php">Création de macros</a></p>
-        <p><a href="style.php">Créer sa feuille de style</a></p>
-        <p><a href="beamer.php">Créer une présentation</a></p>          
-        <p><a href="exercices.php">Exercices</a></p> 
-      
-       </div>
-       </div> 
-          </BODY>
-    
-</HTML>
+
+
+
           </BODY>
     
 </HTML>

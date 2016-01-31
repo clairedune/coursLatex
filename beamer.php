@@ -1,14 +1,58 @@
-<DOCTYPE !>
-<HTML>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Initiation à LaTeX par la pratique</title>
 
-    <HEAD>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </HEAD>
-        
-    <BODY>
-           
-        <div class="container">   
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+  
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.php">Introduction à Latex</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li ><a href="bases.php">Bases</a></li>
+            <li><a href="section.php">Structure</a></li>
+           <li><a href="image.php">Images</a></li>
+        <li><a href="tableau.php">Tableaux</a></li>
+        <li><a href="maths.php">Maths</a></li>
+        <li><a href="biblio.php">Biblio</a></li> 
+        <li><a href="commande.php">Macros</a></li>
+        <li><a href="style.php">Style</a></li>
+        <li class="active"><a href="beamer.php">Beamer</a></li>          
+        <li><a href="exercices.php">Exercices</a></li> 
+            
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>        
+    
+     </br>
+    </br>
+    <div class="container">   
            
         <H1>Créer sa présentation en Beamer</H1>
             <p class="texte"> LaTeX permet de créer des présentation de grande qualité très simplement. Sous Texmaker, vous pouvez utiliser l'assistant de création de document et créer un document de classe "beamer" : </p>
@@ -309,24 +353,7 @@ Et encore un autre clic et on aura ce texte là. Magnifique non ?<br/>
             <li><a href="http://www.tug.org/teTeX/tetex-texmfdist/doc/latex/beamer/beameruserguide.pdf">lien vers le guide</li>
             </ul>
       </div>
-       
-       <div style="clear:both;">
-       <HR />
- <H2> Allez à </H2>
-        <p><a href="index.php">Introduction</a></p>
-        <p><a href="bases.php">Création d'un document et modification du texte.</a></p>
-        <p><a href="section.php">Structure d'un document</a></p>
-        <p><a href="image.php">Insérer des images</a></p>
-        <p><a href="tableau.php">Tableaux</a></p>
-        <p><a href="maths.php">Formules mathématiques</a></p>
-        <p><a href="biblio.php">Créer une bibliographie</a></p> 
-        <p><a href="commande.php">Création de macros</a></p>
-        <p><a href="style.php">Créer sa feuille de style</a></p>        
-        <p><a href="exercices.php">Exercices</a></p>     
-    
-      
-       </div>
-               </div><!--fin container-->
+                    </div><!--fin container-->
  
           </BODY>
     
