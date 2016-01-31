@@ -54,15 +54,24 @@
     </br>
            <div class="container">  
            
-           <H1>Exemples et exercices</H1>
-           <H2>Exercices</H2>
-           <H3>Exercice 1</H3>
+           
+           <H1>Exercices</H1>
+           
+           
+           <div >
+            <H3>Exercice 1</H3>
+            <p>   En utilisant l'assistant de TeXMaker, créez le <a href="example/style4.pdf">document suivant</a>. </p>  
+        </div>
+           
+           
+           <H3>Exercice 2</H3>
            <p class="texte">Essayer d'obtenir ce document en latex:</p>
            <a href="example/lum.pdf"><img src="image/28.png" width="400"/></a>
           <p class="texte"> Vous pouvez télécharger les images <a href="example/ex1images.zip">ici</a>.
            
            <HR />
-           <H2>Exemples</H2>
+           <BR />
+           <H1>Exemples</H1>
            
            <H3>Des CV en LaTeX</H3>
            <p class="texte">Cliquez sur l'image pour télécharger les sources (www.latextypesetting.com)</p>
@@ -79,6 +88,11 @@
            <div style="float:left;">
            <a href="example/cv_3.tex"><img src="image/cv_3.png" width="400"/></a>
            </div>
+  
+  
+  
+  
+  
   
             </div> 
           </BODY>

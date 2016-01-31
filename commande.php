@@ -86,6 +86,9 @@ La commande \xspace teste ce qui suit la commande : si c'est une ponctuation ou 
 <p class=code>
 (...) \cad{}\footnote{Ma note de pied de page} (...)
 </p>
+
+<div style="clear:both;">
+
             <H2>Liens</H2>
         Allez voir ces sites pour plus de détails
             <ul>
@@ -93,7 +96,7 @@ La commande \xspace teste ce qui suit la commande : si c'est une ponctuation ou 
             <li><a href="http://www.tuteurs.ens.fr/logiciels/latex/macros.html"> Un autre site qui explique très bien les macros</a></li>
             </ul>
       
-       
+       </div>
       
 </div><!--fin container-->
           </BODY>

@@ -56,19 +56,21 @@
            <H1>Gérer la bibliographie avec BibTex</H1>
            
            <H2>Citer des articles</H2>
-           <p class="texte"> Dans les corps du texte pour citer un articles, on utilise la commande <b>cite</b> :</p>
-           <p class="code">
+           <div class="texte"> Dans les corps du texte pour citer un articles, on utilise la commande <b>cite</b> :</div>
+           <div class="code">
               L'article de~\cite{Marey98} parle de cette méthode.
-           </p>
+           </div>
            
+           
+           <div style="clear:both;">
            <H2>Insérer la bibliographie</H2>
-           
-           <p class="code">
+           </div>
+           <div class="code">
             \bibliographystyle{style utilisé}<br>
 \bibliography{nom du fichier .bib (sans l'extension .bib)}
-           </p>
+           </div>
            
-           <p class="texte">Le style peut être <b>plain</b>, <b>alpha</b>, <b>abbr</b>, <b>unsrt</b>.<p>
+           <div class="texte">Le style peut être <b>plain</b>, <b>alpha</b>, <b>abbr</b>, <b>unsrt</b>.</div>
            
            
            <H2>Les éléments du fichier .bib</H2>
@@ -131,9 +133,11 @@ publisher= {éditeur}<br />
 }<br />
 </div>
 
+
+<div style="clear:both;">
 <H2>Les alias</H2>
            <p class="texte" > Pour ne pas retaper les noms de congrès et de journaux pour tous les fichiers, il est possible d'associer un texte à un sigle en utilisant le mot clé <b>@string</b></p>
-  
+  </div>
            
   <p class="code">         @string{ PRL = {Physical Review Letters}}<br>
   @Article{article 1<br />
@@ -143,10 +147,14 @@ journal = PRL,<br />
 }<br />
   </p>
   
+  
+  <div style="clear:both;">
+
   <H2>Compilation</H2>
            
            <p class="texte"> Pour compiler : on compile 1 fois en latex, puis 1 fois en BibTex, puis 2 fois en latex. </p>
            
+           </div>
            </div> 
           </BODY>
     

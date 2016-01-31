@@ -59,6 +59,7 @@
         
         <H2>Sections, sous sections, paragraphe</H2>
         <p class="texte"> LaTeX permet de sectionner votre document de manière automatique en utilisant les balises suivantes : </p>
+        
         <div class="code">
         \part{}<br/>
         \chapter{}<br/>
@@ -69,12 +70,18 @@
         \subparagraph{}<br/>
         </div>
         
-        <p class="texte">En quelques clics, l'assistant LaTeX pour vous aider à insérer ces balises de structure : </p>
-        <figure>
-            <img src="image/4.png" width="600"> </tr>
-         </figure> 
         
-         <p class="texte">Selon la classe de document utilisée, l'accés à certaines de ces catégories est interdite. Par exemple, dans les documents de classe article, il n'est pas possible d'insérer une partie ou un chapitre. </p>
+        <div class="texte" style="clear:both;">
+            <p>En quelques clics, l'assistant LaTeX pour vous aider à insérer ces balises de structure : </p>
+            <figure>
+                <img src="image/4.png" width="600"> </tr>
+            </figure> 
+            <p class="texte">Selon la classe de document utilisée, 
+            l'accés à certaines de ces catégories est interdite. 
+            Par exemple, dans les documents de classe article, 
+            il n'est pas possible d'insérer une partie ou un chapitre. </p>
+        </div> 
+         
          
          <p class="texte"><i>Remarque</i> : Les sections sont numérotées automatiquement. Pour ne pas numéroter une section, il suffit d'ajouter * à la suite de la commande : </p>
          <div class="code">
@@ -195,45 +202,7 @@
          </div>
          
          <HR />
-         <H2>Liste</H2>
-         
-         <p class="texte">Il existe deux types de listes en LaTeX, les listes à puces {itemize} et les listes numérotées {enumerate}. </p>
-         
-         <p class="texte">Un exemple de liste à puces simple : </p>
-         
-         <div class="code">
-         Je veux acheter :<br>
-\begin{itemize}<br>
-\item des poires ;<br>
-\item des carottes ;<br>
-\item des choux.<br>
-\end{itemize}<br>
-</div>
-
-<p class="texte">Un exemple de liste à puces numérotée : </p>
-
- <div class="code">
-Les vainqueurs sont :<br>
-\begin{enumerate}<br>
-\item Paul Lefort ;<br>
-\item Romain Legrand ;<br>
-\item Joël Lebel.<br>
-\end{enumerate}<br>
-</div>
-
-<div class="exercice">
-            <H3>Exercice</H3>
-            <p>       Insérez ces deux listes à puce dans votre document. </p>
-         <br>
-        </div>
-        
-        <div class="exercice">
-            <H3>Exercice</H3>
-            <p>       Créez un nouveau document et créez les listes à puces pour obtenir le <a href="example/liste.pdf">résultat suivant</a>. </p>
-         <br>
-        </div>
-        
-        
+                 
         <HR />
          
          <H2>Labels et references</H2>
@@ -247,7 +216,8 @@ Les vainqueurs sont :<br>
             
             </div>
             
-            <p class="texte">Puis, plus loin dans le code</p>
+            <div class="texte" style="clear:both;">Puis, plus loin dans le code</div>
+             
              <div class="code">
             
                Je veux faire référence à la section \ref{sec:introduction}.

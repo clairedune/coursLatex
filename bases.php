@@ -307,6 +307,55 @@ Pour faire une ligne blanche entre deux paragraphes, il faut laisser une ligne b
 
 
 
+
+<hr/>
+<H2>Liste</H2>
+         
+         <p class="texte">Il existe deux types de listes en LaTeX, les listes à puces {itemize} et les listes numérotées {enumerate}. </p>
+         
+         <p class="texte">Un exemple de liste à puces simple : </p>
+         
+         <div class="code">
+         Je veux acheter :<br>
+\begin{itemize}<br>
+\item des poires ;<br>
+\item des carottes ;<br>
+\item des choux.<br>
+\end{itemize}<br>
+</div>
+
+<div class="texte" style="clear:both;">Un exemple de liste à puces numérotée : </div>
+
+ <div class="code">
+Les vainqueurs sont :<br>
+\begin{enumerate}<br>
+\item Paul Lefort ;<br>
+\item Romain Legrand ;<br>
+\item Joël Lebel.<br>
+\end{enumerate}<br>
+</div>
+
+<div class="exercice">
+            <H3>Exercice</H3>
+            <p>       Insérez ces deux listes à puce dans votre document. </p>
+         <br>
+        </div>
+        
+        <div class="exercice">
+            <H3>Exercice</H3>
+            <p>       Créez un nouveau document et créez les listes à puces pour obtenir le <a href="example/liste.pdf">résultat suivant</a>. </p>
+         <br>
+        </div>
+        
+
+
+
+
+
+
+
+
+</div>
           </BODY>
     
 </HTML>
