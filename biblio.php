@@ -62,8 +62,30 @@
            </div>
            
            
+           <div style="clear:both">
+           <H2> Insérer de la bibliographie avec les éléments bibitem </H2>
+           
+           <p><i>\bibitem</i> est la commande a utiliser pour entrer une référence bibliographique dans l'environnement <i>thebibliographe</i> de votre document. La syntaxe est la suivante <i>\bibitem[label]{key}</i></p>
+           
+           <p class="code">
+           \begin{thebibliography}{50}<br/>
+		\bibitem{Simpson} Homer J. Simpson. \textsl{Mmmmm...donuts}.<br/>
+		Evergreen Terrace Printing Co., Springfield, SomewhereUSA, 1998<br/>
+		\end{thebibliography}<br/>
+           </p>
+           
+           <p style="clear:both;">
+          Et pour vous référer à cet élément dans votre texte, il faut écrire :
+           </p>
+           
+           <p class="code">
+           My thesis, about the philosophy of The Simpsons\copyright<br/>
+		comes from my favorite book \cite{Simpson}.<br/>
+           </p>
+           </div>
+           
            <div style="clear:both;">
-           <H2>Insérer la bibliographie</H2>
+           <H2>Insérer la bibliographie avec un fichier .bib</H2>
            </div>
            <div class="code">
             \bibliographystyle{style utilisé}<br>
