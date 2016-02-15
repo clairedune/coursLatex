@@ -54,16 +54,18 @@
           <div class="container">   
            
        
-           
+           <div>
             <H1>Créer ses macros</H1>
             
             <H2>Introduction</H2>
-            <p class="texte"> On peut faciliter l'écriture des document en créant des macros. Par exemple, plutot qu'ecrire le nom complet d'un institut ou d'une méthode, on peut écrire un sigle et au moment de la compilation, LaTeX remplacera cette commande par le texte équivalent. Par exemple : </p>
+            <p class="texte"> On peut faciliter l'écriture des document en créant des macros. Par exemple, plutot qu'écrire le nom complet d'un institut ou d'une méthode, on peut écrire un sigle et au moment de la compilation, LaTeX remplacera cette commande par le texte équivalent. Par exemple : </p>
             
             <p class= "code" >\newcommand\cad{c'est-à-dire}</p>
             
             <p class="texte">Cette ligne crée une nouvelle commande, \cad, qui sera automatiquement remplacée lors de la compilation par le texte « c'est-à-dire ». Remarquez que LaTeX proteste si la commande que vous définissez existe déjà.</p>
+            </div>
             
+            <div>
            <H2>Gestion des espaces après la commande</H2>
 
             <p class="texte">Après toute commande dont le nom est composé de lettres (comme \LaTeX, par exemple et à l'inverse de \$), les espaces sont ignorées. Par conséquent, si vous voulez que votre macro soit suivie d'une espace dans le résultat final, utilisez l'une des méthodes suivantes :</p>
@@ -86,6 +88,109 @@ La commande \xspace teste ce qui suit la commande : si c'est une ponctuation ou 
 <p class=code>
 (...) \cad{}\footnote{Ma note de pied de page} (...)
 </p>
+
+</div>
+
+<div class="exercice">
+<H2>Exercice 1</H2>
+Lorsqu'on écrit des formules mathématiques, on est parfois confrontés à un nombre croissant de variables qui nous amène à vouloir revoir nos notation pour plus de clareté. 
+<ul>
+    <li>Créer un commande \xdot qui contient la chaine de caractère suivante \dot{x}. </li>
+    <li>Utilisez la dans une formule mathématique, par exemple dans un environnement équation</li>
+    <li>Compiler votre document et afficher le résultat</li>
+    <li>Changez maintenant la formule pour \frac{dx}{dt}</li>
+    <li>Afficher le document obtenu</li>
+</ul>
+
+<H2>Exercice 2</H2>
+On veut spécifier une largeur pour toutes les images d'un document 
+<ul>
+    <li>Créez un document qui contient plusieurs images.</li>
+    <li>Créez une commande \largeur qui contient "5cm" . </li>
+    <li>Utilisez \largeur comme valeur pour le paramètre "width" de la commande \includegraphics</li>
+    <li>Compiler votre document et afficher le résultat</li>
+    <li>Changez maintenant la valeur de \largeur, par exemple, 10cm</li>
+    <li>Afficher le document obtenu</li>
+</div>
+
+
+<div>
+<H1>Commandes avec paramètres</H1>
+
+<p>
+La commande  
+</p>
+
+<p class="code">
+\newcommand{\Nom}[nbparam]{définition}
+</p>
+
+<p style ="clear:both;" >
+définit une macro-commande <i>\Nom</i> pouvant accepter <i>nbparam</i> paramètres et effectuant les actions  énumérées dans <i>définition</i>.  
+</p>
+
+<p>
+Par exemple, pour afficher du texte en bleu (ajouter le package color en entête \usepackage{color}): 
+</p>
+<p class="code">
+\definecolor{bluelight}{rgb}{0.82,0.82, 0.9}<br/>
+<br/>
+\newcommand{\bluetxt}[1]{\color{bluelight}{#1}}
+</p>
+
+</div>
+
+<div class="exercice">
+<H2>Exercice 3</H2>
+<p>Créer un commande <i>\smallit</i> qui met du texte en gras et en italique. Utilisez cette commande pour mettre en évidence des parties du texte de votre document.</p>
+
+
+<H2>Exercice 4</H2>
+<p>Faire une commande qui écrit <i>Prénom</i> et <i>Nom</i> séparés par un espace insécable (
+~ est l'espace insécable), et avec le nom écrit en petites capitales. </p>
+
+<H2>Exercice 5</H2>
+<p>Lisez le code suivant. Expliquez ce qu'il fait et tester le.</p>
+
+<p>
+\newcommand{\questioncorrige}[2]<br/>
+{
+<br/>
+\textbf{\textcolor{blue}<br/>
+{\underline{Question:}#1~?}<br/>
+ }
+<br/>        
+\textbf{\textcolor{green}<br/>               
+{\underline{Solution:}#2}<br/>
+                }<br/>
+    }<br/>
+</p>
+
+<H2>Exercice 6</H2>
+<ul>
+<li>Créer un commande \correction qui prend deux paramètres, le texte à corriger et une proposition de correction. Le texte à corriger apparaitra barré et en gris, le texte de correction apparaîtra en vert.</li>
+<li>Créer une commande \correctionOK qui prend les deux mêmes paramètres mais n'affichera que la proposition de correction.</li>
+<li>Créer une commande \correctionKO qui prend les deux mêmes paramètres mais n'affichera que le texte d'origine</li>
+</ul>
+
+<H2>Exercice 7</H2>
+<p>Lisez le code suivant et expliquez le. Puis testez le. </p>
+
+<p>
+\newcommand{\propriete}[1]<br/>
+{<br/>
+\fbox{<br/>
+\begin{minipage}{18cm}<br/>
+\textbf{\color{blue}\textcolor{red}{Propriété:}\\#1}<br/>
+\end{minipage}<br/>
+}<br/>
+}<br/>
+</p>
+
+</div>
+
+
+
 
 <div style="clear:both;">
 
